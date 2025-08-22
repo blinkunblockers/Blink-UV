@@ -4,6 +4,11 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+patchedDependencies:
+  ultraviolet-static@1.0.5:
+    hash: qzuaewpgiagrmevu65klll55d4
+    path: patches/ultraviolet-static@1.0.5.patch
+
 importers:
 
   .:
@@ -25,7 +30,7 @@ importers:
         version: 5.0.0
       ultraviolet-static:
         specifier: github:titaniumnetwork-dev/Ultraviolet-Static
-        version: https://codeload.github.com/titaniumnetwork-dev/Ultraviolet-Static/tar.gz/d9a30997be87d0f25f36c85e2fc851528d8f8e23
+        version: https://codeload.github.com/titaniumnetwork-dev/Ultraviolet-Static/tar.gz/d9a30997be87d0f25f36c85e2fc851528d8f8e23(patch_hash=qzuaewpgiagrmevu65klll55d4)
       wisp-server-node:
         specifier: ^1.1.7
         version: 1.1.7
@@ -1396,7 +1401,7 @@ snapshots:
     dependencies:
       prelude-ls: 1.2.1
 
-  ultraviolet-static@https://codeload.github.com/titaniumnetwork-dev/Ultraviolet-Static/tar.gz/d9a30997be87d0f25f36c85e2fc851528d8f8e23: {}
+  ultraviolet-static@https://codeload.github.com/titaniumnetwork-dev/Ultraviolet-Static/tar.gz/d9a30997be87d0f25f36c85e2fc851528d8f8e23(patch_hash=qzuaewpgiagrmevu65klll55d4): {}
 
   uri-js@4.4.1:
     dependencies:
